@@ -146,7 +146,7 @@ export const TableOfContents = forwardRef<TableOfContentsHandle, TableOfContents
               style={{ paddingLeft: `${(heading.level - 1) * 0.5}rem` }}
             >
               <a
-                ref={el => linkRefs.current[index] = el}
+                ref={el => { linkRefs.current[index] = el; }}
                 href={`#${heading.id}`}
                 onKeyDown={(e) => handleKeyDown(e, index)}
                 onClick={(e) => {
