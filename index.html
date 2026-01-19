@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guide to Deliberate Practice</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            typography: (theme) => ({
+              DEFAULT: {
+                css: {
+                  color: theme('colors.gray.800'),
+                  h1: { color: theme('colors.gray.900') },
+                  h2: { color: theme('colors.gray.900') },
+                  h3: { color: theme('colors.gray.900') },
+                  strong: { color: theme('colors.gray.900') },
+                  blockquote: { borderLeftColor: theme('colors.indigo.500') },
+                },
+              },
+              invert: {
+                css: {
+                  color: theme('colors.gray.300'),
+                  h1: { color: theme('colors.white') },
+                  h2: { color: theme('colors.gray.100') },
+                  h3: { color: theme('colors.gray.200') },
+                  strong: { color: theme('colors.white') },
+                  blockquote: { borderLeftColor: theme('colors.indigo.400'), color: theme('colors.gray.300') },
+                },
+              },
+            }),
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'bounce-in': {
+                '0%': { opacity: '0', transform: 'scale(0.9)' },
+                '50%': { opacity: '1', transform: 'scale(1.05)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.3s ease-out',
+              'bounce-in': 'bounce-in 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+            }
+          },
+        },
+        plugins: [],
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .prose-content { font-family: 'Merriweather', serif; }
+        /* Custom Scrollbar for Sidebar */
+        aside::-webkit-scrollbar { width: 4px; }
+        aside::-webkit-scrollbar-thumb { background-color: #E5E7EB; border-radius: 4px; }
+        /* Material Symbols Tweaks */
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          vertical-align: middle;
+          /* Prevent layout shifts slightly */
+          line-height: 1; 
+          display: inline-block;
+        }
+        /* Filled variant class helper */
+        .material-symbols-filled {
+          font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "jszip": "https://aistudiocdn.com/jszip@^3.10.1",
+    "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5",
+    "qrcode": "https://aistudiocdn.com/qrcode@^1.5.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
