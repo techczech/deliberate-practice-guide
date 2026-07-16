@@ -1,3 +1,12 @@
+---
+name: "Deliberate Practice Guide"
+description: "Turns the principles of deliberate practice into a navigable guide with progress tracking and an AI coach."
+categories: [content-distribution, web-app, built-by-ai, powered-by-ai]
+updated: 2026-07-16
+deployments:
+  Appsite:
+    "Deliberate Practice Guide": https://deliberatepractice.dominiklukes.net/
+---
 # Guide to Deliberate Practice
 
 An interactive, AI-powered guide designed to help users understand and apply the principles of Deliberate Practice. This web application transforms static learning material into a dynamic experience with reading tools, progress tracking, and an AI coach.
